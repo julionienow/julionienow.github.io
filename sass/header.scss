@@ -12,6 +12,7 @@ header {
 	> * {
 		padding-left: 20px;
 		padding-right: 20px;
+		position: relative;
 	 }
 }
 
@@ -161,6 +162,8 @@ h3.header_bottom_profile-info_header-number:before {
 		font-size: 15px;
     	color: #3f454a;
     	position: relative;
+    	cursor: pointer;
+    	z-index: 10;
 	}
 }
 

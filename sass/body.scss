@@ -1,0 +1,95 @@
+section {
+	background-color: #fff;
+	margin-top: 35px;
+	box-shadow: 0px 3px 12px #e1e1e1;
+    -webkit-box-shadow: 0px 3px 12px #e1e1e1;
+    -moz-box-shadow: 0px 3px 12px #e1e1e1;
+    border: 1px solid #e6eaec;
+}
+
+.body_profile-info {
+	
+	padding-top: 38px;
+	padding-left: 14px;
+
+	div {
+		margin-bottom: 1px;
+		background-color: #f5f8f8;
+    	display: inline-block;
+	}
+
+	div:before {
+		color: #a8b8c4;
+    	font-size: 18px;
+    	padding-left: 6px;
+    	margin-right: 5px;
+	}
+
+	a:before {
+	    background-color: #ecf1f5;
+	    border: 0px;
+	    width: 43px;
+	    height: 37px;
+	    font-size: 16px;
+	    text-align: center;
+	    padding-top: 11px;
+	    box-sizing: border-box;
+	}
+
+	a:hover:before {
+		background-color: #007ee5;
+		color: #fff;
+		cursor: pointer;
+	}
+
+	h3, h4 {
+		display: initial;
+		margin-right: 14px;
+	}
+
+	h2 {
+		color: #727e88;
+		font-size: 24px;
+		font-weight: 500;
+		margin-bottom: 28px;
+	}
+
+	h3 {
+		color: #3f454a;
+		font-weight: 600;
+		font-size: 16px;
+		padding-left: 5px;
+	}
+
+	h4 a {
+		text-decoration: none;
+    	color: #3f454a;
+	}
+
+	h4 {
+		font-size: 14px;
+    	color: #3f454a;
+	}
+
+	.ion-android-globe {
+ 		a:before {
+		   margin-left: 9px;
+
+ 		}
+ 	}
+
+ 	.ion-ios-telephone-outline {
+ 		a:before {
+		   margin-left: 20px;
+
+ 		}
+ 	}
+
+ 	.ion-ios-home-outline {
+ 		a:before {
+		   margin-left: 11px;
+
+ 		}
+ 	}
+
+ }
