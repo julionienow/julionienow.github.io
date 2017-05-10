@@ -5,13 +5,13 @@ section {
     -webkit-box-shadow: 0px 3px 12px #e1e1e1;
     -moz-box-shadow: 0px 3px 12	px #e1e1e1;
     border: 1px solid #e6eaec;
+
+	padding-top: 38px;
+	padding-left: 34px!important;
+	padding-bottom: 365px;
 }
 
 .body_profile-info {
-	
-	padding-top: 38px;
-	padding-left: 14px;
-	padding-bottom: 365px;
 
 
 	div {
@@ -95,3 +95,48 @@ section {
  	}
 
  }
+
+ .body_profile-settings {
+
+ 	h2 {
+ 		color: #727e88;
+    	font-size: 24px;
+    	font-weight: 500;
+    	margin-bottom: 28px;
+ 	}
+
+ 	form {
+
+ 		input:focus  {
+	 		outline: 0;
+	 	}
+
+ 		input {
+			display: block;
+		    border: 0px;
+		    border-bottom: 1px solid #d0dce7;
+		    color: #3f454a;
+		    font-size: 16px;
+		    line-height: 32px;
+		    padding-left: 5px;
+		    margin-top: 16px;
+		}
+
+		.save {
+			margin-top: 30px;
+			width: 97px;
+			height: 30px;
+			box-sizing: border-box;
+			background-color: #007ee5;
+			color: #fff;
+			font-size: 13px;
+			border: 0px;
+			font-weight: 600;
+			cursor: pointer;	
+		}
+ 	}
+ }
+
+ .body_profile-settings {
+    display: none;
+}
