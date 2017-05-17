@@ -1,0 +1,111 @@
+@media screen and (max-width: 767px) {
+
+	section {
+		
+		margin-top: 91px;
+		border: 0px;
+	    border-top: 1px solid #d0dce7;
+	    border-bottom: 1px solid #d0dce7;
+	    padding-bottom: 21px;
+        padding-top: 20px;
+   		padding-left: 23px!important;
+	    margin-bottom: 34px;
+		box-shadow: initial;
+	    -webkit-box-shadow: initial;
+	    -moz-box-shadow: initial;
+
+	}
+
+	.body_profile-info {
+
+		div {
+
+			background-color: transparent;
+    		margin-bottom: 14px;
+
+			a:before {
+				display: none;	
+			}
+	    
+	    }
+
+	    div:before {
+	    	vertical-align: middle;
+	    }
+
+	    image {
+	    	-webkit-box-shadow: 0px 1px 43px -3px rgba(0, 0, 0, 0.3);
+            -moz-box-shadow: 0px 1px 43px -3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 1px 43px -3px rgba(0, 0, 0, 0.3);
+	    }
+
+
+		h3.header_bottom_profile-info_header-job {
+			display: block;
+			font-size: 14px;
+		    font-weight: 500;
+		    margin-top: 13px;
+		    margin-bottom: 5px;
+		}
+
+		h2 {
+			margin-bottom: 14px;
+			font-size: 20px;
+
+			&:before {
+				display: block;
+			    position: absolute;
+			    right: 25px;
+			    background-color: #ecf1f5;
+			    width: 30px;
+			    height: 25px;
+			    text-align: center;
+			    padding-top: 3px;
+			    box-sizing: border-box;
+			    font-size: 18px;
+			}
+		}
+	}
+
+	.body_profile-settings {
+
+		padding-bottom: 6px;
+
+		h2 {
+			font-size: 20px;
+			margin-bottom: 34px;
+		}
+
+		form {
+
+			input {
+				margin-top: 33px;
+				line-height: 30px;
+			}
+
+			.cancel {
+				display: block;
+				float: left;
+    			margin-right: 68px;
+			}
+
+			.save, .cancel {
+				color: #007ee5;
+			    width: initial;
+			    background-color: transparent;
+			    height: initial;
+			    font-size: 14px;
+			    margin-top: 0px;
+			    position: absolute;
+			    top: 31px;
+			    right: 30px;
+			}
+
+		}
+
+
+	}
+
+
+
+}

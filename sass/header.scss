@@ -110,6 +110,7 @@ h3.header_bottom_profile-info_header-location {
 	    font-size: 18px;
 	    vertical-align: bottom;
 	    margin-right: 15px;
+	    color: grey;
     }
 }
 
@@ -117,6 +118,7 @@ h3.header_bottom_profile-info_header-number:before {
     font-size: 18px;
     vertical-align: bottom;
     margin-right: 15px;
+    color: gray;
 }
 
 .header_bottom_rate {
@@ -132,6 +134,10 @@ h3.header_bottom_profile-info_header-number:before {
 .header_bottom_rate {
 	span {
 		color: #727e88; 
+
+		b {
+			font-weight: normal;
+		}
 
 		&:before {
 			vertical-align: baseline;
