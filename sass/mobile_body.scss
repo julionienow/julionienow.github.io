@@ -1,6 +1,10 @@
 @media screen and (max-width: 767px) {
 
-	section {
+	.container.website {
+		height: 100%;
+	}
+
+	.container.website section {
 		
 		margin-top: 91px;
 		border: 0px;
@@ -9,7 +13,7 @@
 	    padding-bottom: 21px;
         padding-top: 20px;
    		padding-left: 23px!important;
-	    margin-bottom: 34px;
+	    margin-bottom: 34px!important;
 		box-shadow: initial;
 	    -webkit-box-shadow: initial;
 	    -moz-box-shadow: initial;

@@ -3,10 +3,11 @@ header {
 	padding-top: 23px;
 }
 
-.container {
+.container.website {
 	max-width: 1170px;
 	margin: 0 auto;
-	margin-top: 70px;
+	padding-top: 70px;
+	padding-bottom: 260px;
 	position: relative;
 
 	> * {

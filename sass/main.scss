@@ -3,16 +3,21 @@
 @import "mobile_header.scss";
 @import "mobile_body.scss";
 @import "login.scss";
+@import "login_mobile.scss";
 
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
 -moz-box-sizing: border-box; 
-font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans', sans-serif!important;
 }
 
 
-body {
+.website_bg {
 	background-color: #f5f8f9;
+}
+
+.website_bg {
+	display: none;
 }
