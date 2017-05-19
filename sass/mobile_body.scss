@@ -31,7 +31,7 @@
 		}
 
 		div {
-
+			
 			background-color: transparent;
     		margin-bottom: 14px;
 
@@ -83,6 +83,10 @@
 
 		padding-bottom: 6px;
 		padding-right: 10px;
+
+		span.editabsolutedesktop {
+			display: none;
+		}
 
 		.cancel {
     		float: left;

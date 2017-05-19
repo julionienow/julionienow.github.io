@@ -42,11 +42,79 @@
 
 .body_profile-info {
 
+	span.editabsolutedesktop {
+	    position: absolute;
+	    top: 0px;
+	    right: 0px;
+	    width: 43px;
+	    height: 37px;	
+	    cursor: pointer;
+
+	    &:hover .ion-edit {
+			background-color: #007ee5;
+		    color: #fff;
+		    cursor: pointer;
+	    }
+	}
 
 	div {
+
+		> div {
+
+		    position: absolute;
+		    z-index: 10;
+		    background-color: #fff;
+		    right: -225px;
+	    	top: -10px;
+	    	box-shadow: 0px 3px 26px 4px #e1e1e1;
+		    -webkit-box-shadow: 0px 3px 26px 4px #e1e1e1;
+		    -moz-box-shadow: 0px 3px 26px 4px #e1e1e1;
+	        padding: 22px 19px 22px 21px;
+
+	        &:before {
+	        	content: "";
+			    position: absolute;
+			    margin-top: 0px;
+			    background-color: #fff;
+			    width: 28px;
+			    height: 24px;
+			    -ms-transform: rotate(7deg);
+			    -webkit-transform: rotate(7deg);
+			    transform: rotate(45deg);
+			    left: -10px;
+			    z-index: 9;
+	        }
+
+	    	input {
+	    		@extend %input_pattern;
+	    		width: 100%;
+	    		margin-top: 12px;
+	    	}
+
+	    	button {
+				@extend %confirm_cancel_login-button;
+				margin-top: 20px;
+			    background-color: #fff;
+			    color: #55a9ee;
+			    border: 1px solid #55a9ee;
+	    	}
+
+	    	button.save {
+	    		margin-right: 16px;
+	    	}
+		}
+
+	}
+
+	div {
+		position: relative;
 		margin-bottom: 1px;
 		background-color: #f5f8f8;
     	display: inline-block;
+
+    	> div {
+    		display: none;
+    	}
 	}
 
 	div:before {

@@ -142,27 +142,60 @@
 						<h2 class="ion-edit">Profile Info</h2>
 						<span class="editabsolute"></span>
 
-						<div>
+						<div class="body_profile-info_loaded-name">
 							<h3><span class="first">Jessica</span> <span class="second">Parker</span></h3><a class="ion-edit"></a>
 							<h3 class="header_bottom_profile-info_header-job">Business</h3>
+							<span class="editabsolutedesktop"></span>
+							<div class="nameeditdiv">
+								<form>
+									<input type="text" value="Jessica Parker" id="nameinfoedit">
+									<button type="button" class="save">SAVE</button>
+									<button type="button" class="cancel">CANCEL</button>
+								</form>
+							</div>
 						</div>
 						
 						<br />
 
-						<div class="ion-android-globe">
+						<div class="body_profile-info_loaded-website ion-android-globe">
 							<h4><a href="http://www.seller.com" target="_blank">www.seller.com</a></h4><a class="ion-edit"></a>
+							<span class="editabsolutedesktop"></span>
+							<div class="websiteeditdiv">
+								<form>
+									<input type="text" id="websiteinfoedit" value="www.seller.com">
+									<button type="button" class="save">SAVE</button>
+									<button type="button" class="cancel">CANCEL</button>
+								</form>
+							</div>
 						</div>
 
 						<br />
 
-						<div class="ion-ios-telephone-outline">
+						<div class="body_profile-info_loaded-phone ion-ios-telephone-outline">
 							<h4>(949) 325 - 68594</h4><a class="ion-edit"></a>
+							<span class="editabsolutedesktop"></span>
+							<div class="phoneeditdiv">
+								<form>
+									<input type="tel" id="phoneinfoedit" value="(949) 325 - 68594">
+									<button type="button" class="save">SAVE</button>
+									<button type="button" class="cancel">CANCEL</button>
+								</form>
+							</div>
 						</div>
 
 						<br />
 
-						<div class="ion-ios-home-outline">
+						<div class="body_profile-info_loaded-adress ion-ios-home-outline">
 							<h4>Newport Beach, CA</h4><a class="ion-edit"></a>
+							<span class="editabsolutedesktop"></span>
+							<div class="adresseditdiv">
+								<form>
+									<input type="text" id="adressinfoedit" value="Newport Beach, CA">
+									<button type="button" class="save">SAVE</button>
+									<button type="button" class="cancel">CANCEL</button>
+								</form>
+
+							</div>
 						</div>
 
 					</div>
@@ -200,8 +233,8 @@
 								
 								<input type="Password" name="Password" pattern=".{6,10}" required title="6 to 10 characters" placeholder="Confirm Password" required>
 
-									<button class="cancel">CANCEL</button>
-									<button class="save">SAVE</button>
+									<button type="button" class="cancel">CANCEL</button>
+									<button type="button" class="save">SAVE</button>
 
 							</form>
 
