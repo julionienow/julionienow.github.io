@@ -27,6 +27,126 @@
 			border-radius: 3px;
 }
 
+%react_placeholder {
+	position: absolute;
+    z-index: 10;
+    font-size: 12px;
+    color: #a6b0b7;
+    animation-duration: 2s ;
+     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+     animation-fill-mode: forwards;
+    left: 5px;
+    font-size: 16px;
+}
+
+@keyframes reactmovedeskemail {
+	from {top: 20px;}
+	to {top: -18px; font-size: 12px;}
+}
+@keyframes reactmovedeskpass {
+	from {top: 60px;}
+	to {top: 20px; font-size: 12px;}
+}
+
+.login_box-email_input_text {
+    animation-name: reactmovedeskemail;
+}
+.login_box-password_input_text {
+    animation-name: reactmovedeskpass;
+}
+
+
+
+@keyframes reactmovesettingscurrent {
+	from {top: 40px;}
+	to {top: -20px; font-size: 12px;}
+}
+
+@keyframes reactmovesettingsnew {
+	from {top: 40px;}
+	to {top: -20px; font-size: 12px;}
+}
+
+@keyframes reactmovesettingsrepeat {
+	from {top: 20px;}
+	to {top: -20px; font-size: 12px;}
+}
+
+.body_profile-settings-settingscurrent {
+	@extend %react_placeholder;
+    animation-name: reactmovesettingscurrent;
+}
+.body_profile-settings-settingsnew {
+	@extend %react_placeholder;
+    animation-name: reactmovesettingsnew;
+}
+.body_profile-settings-settingsrepeat {
+	@extend %react_placeholder;
+    animation-name: reactmovesettingsrepeat;
+}
+
+
+
+
+@keyframes reactmovemobilefirst {
+	from {top: 40px;}
+	to {top: -20px; font-size: 12px;}
+}
+
+@keyframes reactmovemobilelast {
+	from {top: 45px;}
+	to {top: 15px; font-size: 12px;}
+}
+
+@keyframes reactmovemobilewebsite {
+	from {top: 45px;}
+	to {top: 15px; font-size: 12px;}
+}
+
+@keyframes reactmovemobilephone {
+	from {top: 45px;}
+	to {top: 15px; font-size: 12px;}
+}
+
+@keyframes reactmovemobileadress {
+	from {top: 45px;}
+	to {top: 15px; font-size: 12px;}
+}
+
+.body_profile-info_edit-_firstmobile {
+	@extend %react_placeholder;
+	animation-name: reactmovemobilefirst;
+}
+
+.body_profile-info_edit-_lastmobile {
+	@extend %react_placeholder;
+	animation-name: reactmovemobilelast;
+}
+
+.body_profile-info_edit-_websitemobile {
+	@extend %react_placeholder;
+	animation-name: reactmovemobilewebsite;
+}
+
+.body_profile-info_edit-_phonemobile {
+	@extend %react_placeholder;
+	animation-name: reactmovemobilephone;
+}
+
+.body_profile-info_edit-_adressmobile {
+	@extend %react_placeholder;
+	animation-name: reactmovemobileadress;
+}
+
+.ui-loader.ui-corner-all.ui-body-a.ui-loader-default {
+    display: none;
+}
+
+.relative {
+	position: relative;
+}
+
 .container.website section {
 	background-color: #fff;
 	margin-top: 35px;
@@ -42,6 +162,12 @@
 
 .body_profile-info {
 
+
+
+	span.editabsolutedesktop.ion-edit:before {
+	    content: "";
+	}
+
 	span.editabsolutedesktop {
 	    position: absolute;
 	    top: 0px;
@@ -50,14 +176,28 @@
 	    height: 37px;
 	    cursor: pointer;
 
-	    &:hover .ion-edit {
-			background-color: #007ee5;
+	    &:hover:before {
+		    background-color: #007ee5;
 		    color: #fff;
 		    cursor: pointer;
+		    content: "\f2bf";
+		    height: 37px;
+		    width: 43px;
+		    padding-top: 11px;
+		    text-align: center;
+		    box-sizing: border-box;
+		    content: "\f2bf";
 	    }
 	}
 
 	div {
+
+		form > span {
+			@extend %react_placeholder;
+			left: 26px;
+    		top: 15px;
+    		font-size: 12px;
+		}
 
 		> div {
 
@@ -70,6 +210,7 @@
 		    -webkit-box-shadow: 0px 3px 26px 4px #e1e1e1;
 		    -moz-box-shadow: 0px 3px 26px 4px #e1e1e1;
 	        padding: 22px 19px 22px 21px;
+	        max-width: 255px;
 
 	        &:before {
 	        	content: "";
@@ -106,7 +247,7 @@
 
 	}
 
-	div {
+	> div {
 		position: relative;
 		margin-bottom: 1px;
 		background-color: #f5f8f8;
@@ -212,14 +353,14 @@
 
  	form {
 
-
-
  		input {
  			@extend %input_pattern;
+ 			margin-bottom: 27px;
 		}
 
 		.save, .cancel {
 			@extend %confirm_cancel_login-button;
+			margin-top: 3px;
 		}
 
 		.cancel {

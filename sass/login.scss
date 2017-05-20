@@ -44,12 +44,16 @@
 
     	form {
 
+    		span {
+    			@extend %react_placeholder;
+    		}
+
     		margin-top: 10px;
 
     		input {
     			@extend %input_pattern;
     			width: 100%;
-    			margin-top: 45px;
+    			margin-top: 58px;
     		}
 
     		button {

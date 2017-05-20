@@ -17,6 +17,8 @@
 		<link type="text/css" rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"/>
 
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+  		
 		
 		
 	</head>
@@ -38,9 +40,21 @@
 
 						<form>
 
-							<input type="email" name="email" placeholder="E-mail" required>
+							<div class="relative">
 
-							<input type="Password" name="Password" pattern=".{6,10}" required title="6 to 10 characters" placeholder="Password">
+								<span class="login_box-email_input_text"></span>
+
+							</div>
+
+							<input type="email" name="email" id="loginemail" placeholder="E-mail" required>
+
+							<div class="relative">
+
+								<span class="login_box-password_input_text"></span>
+
+							</div>
+
+							<input type="Password" name="Password" id="loginpass" pattern=".{6,10}" required title="6 to 10 characters" placeholder="Password">
 
 							<h4>By signing up or clicking continue, I confirm that I have read and agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a></h4>
 							
@@ -145,9 +159,10 @@
 						<div class="body_profile-info_loaded-name">
 							<h3><span class="first">Jessica</span> <span class="second">Parker</span></h3><a class="ion-edit"></a>
 							<h3 class="header_bottom_profile-info_header-job">Business</h3>
-							<span class="editabsolutedesktop"></span>
+							<span class="editabsolutedesktop ion-edit"></span>
 							<div class="nameeditdiv">
 								<form>
+									<span>FULL NAME</span>
 									<input type="text" value="Jessica Parker" id="nameinfoedit">
 									<button type="button" class="save">SAVE</button>
 									<button type="button" class="cancel">CANCEL</button>
@@ -159,9 +174,10 @@
 
 						<div class="body_profile-info_loaded-website ion-android-globe">
 							<h4><a href="http://www.seller.com" target="_blank">www.seller.com</a></h4><a class="ion-edit"></a>
-							<span class="editabsolutedesktop"></span>
+							<span class="editabsolutedesktop ion-edit"></span>
 							<div class="websiteeditdiv">
 								<form>
+									<span>WEBSITE</span>
 									<input type="text" id="websiteinfoedit" value="www.seller.com">
 									<button type="button" class="save">SAVE</button>
 									<button type="button" class="cancel">CANCEL</button>
@@ -173,9 +189,10 @@
 
 						<div class="body_profile-info_loaded-phone ion-ios-telephone-outline">
 							<h4>(949) 325 - 68594</h4><a class="ion-edit"></a>
-							<span class="editabsolutedesktop"></span>
+							<span class="editabsolutedesktop ion-edit"></span>
 							<div class="phoneeditdiv">
 								<form>
+									<span>PHONE NUMBER</span>
 									<input type="tel" id="phoneinfoedit" value="(949) 325 - 68594">
 									<button type="button" class="save">SAVE</button>
 									<button type="button" class="cancel">CANCEL</button>
@@ -187,9 +204,10 @@
 
 						<div class="body_profile-info_loaded-adress ion-ios-home-outline">
 							<h4>Newport Beach, CA</h4><a class="ion-edit"></a>
-							<span class="editabsolutedesktop"></span>
+							<span class="editabsolutedesktop ion-edit"></span>
 							<div class="adresseditdiv">
 								<form>
+									<span>CITY, STATE & ZIP</span>
 									<input type="text" id="adressinfoedit" value="Newport Beach, CA">
 									<button type="button" class="save">SAVE</button>
 									<button type="button" class="cancel">CANCEL</button>
@@ -206,11 +224,35 @@
 
 						<form>
 
+							<div class="relative">
+									<span class="body_profile-info_edit-_firstmobile"></span>
+							</div>
 							<input type="text" id="formfirst" name="firstname" placeholder="FIRST NAME">
+
+
+							<div class="relative">
+								<span class="body_profile-info_edit-_lastmobile"></span>
+							</div>
 							<input type="text" id="formlast" name="lastname" placeholder="LAST NAME">
+
+
+							<div class="relative">
+								<span class="body_profile-info_edit-_websitemobile"></span>
+							</div>
 							<input type="text" id="formsite" name="website" placeholder="WEBSITE">
+
+
+							<div class="relative">
+								<span class="body_profile-info_edit-_phonemobile"></span>
+							</div>
 							<input type="tel" id="formphone" name="phonenumber" placeholder="PHONE NUMBER">
+
+
+							<div class="relative">
+								<span class="body_profile-info_edit-_adressmobile"></span>
+							</div>
 							<input type="text" id="formadress" name="adress" placeholder="CITY, STATE & ZIP">
+
 
 							<button type="button" class="cancel">CANCEL</button>
 							<button type="button" class="save">SAVE</button>
@@ -227,11 +269,29 @@
 
 							<form>
 
-								<input type="Password" name="Password" pattern=".{6,10}" required title="6 to 10 characters" placeholder="Existing Password" required>
+								<div class="relative">
 
-								<input type="Password" name="Password" pattern=".{6,10}" required title="6 to 10 characters" placeholder="New Password" required>
+									<span class="body_profile-settings-settingscurrent"></span>
+
+								</div>
+
+								<input type="Password" name="Password" pattern=".{6,10}" id="settingscurrent" required title="6 to 10 characters" placeholder="Existing Password" required>
+
+								<div class="relative">
+
+									<span class="body_profile-settings-settingsnew"></span>
+
+								</div>
+
+								<input type="Password" name="Password" pattern=".{6,10}" id="settingsnew" required title="6 to 10 characters" placeholder="New Password" required>
+
+								<div class="relative">
+
+									<span class="body_profile-settings-settingsrepeat"></span>
+
+								</div>
 								
-								<input type="Password" name="Password" pattern=".{6,10}" required title="6 to 10 characters" placeholder="Confirm Password" required>
+								<input type="Password" name="Password" pattern=".{6,10}" id="settingsrepeat" required title="6 to 10 characters" placeholder="Confirm Password" required>
 
 									<button type="button" class="cancel">CANCEL</button>
 									<button type="button" class="save">SAVE</button>
@@ -253,6 +313,11 @@
 
 		<script src="node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="assets/js/main.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+
+
 
 	</body>
 

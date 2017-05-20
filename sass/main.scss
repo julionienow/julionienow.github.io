@@ -21,3 +21,13 @@ font-family: 'Open Sans', sans-serif!important;
 .website_bg {
 	display: none;
 }
+
+::-webkit-input-placeholder {
+  color: #333333;
+}
+::-moz-placeholder {
+  color: #333333;
+}
+:-ms-input-placeholder {
+  color: #333333;
+}
