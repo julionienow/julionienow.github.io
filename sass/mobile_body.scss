@@ -14,9 +14,9 @@
         padding-top: 20px;
    		padding-left: 23px!important;
 	    margin-bottom: 34px!important;
-		box-shadow: initial;
-	    -webkit-box-shadow: initial;
-	    -moz-box-shadow: initial;
+		box-shadow: inherit;
+	    -webkit-box-shadow: inherit;
+	    -moz-box-shadow: inherit;
 
 	}
 
@@ -123,9 +123,9 @@
 
 			.save, .cancel {
 				color: #007ee5;
-			    width: initial;
+			    width: inherit;
 			    background-color: transparent;
-			    height: initial;
+			    height: inherit;
 			    font-size: 14px;
 			    margin-top: 0px;
 			    position: absolute;
@@ -162,9 +162,9 @@
 
 			.save, .cancel {
 				color: #007ee5;
-			    width: initial;
+			    width: inherit;
 			    background-color: transparent;
-			    height: initial;
+			    height: inherit;
 			    font-size: 14px;
 			    margin-top: 0px;
 			    position: absolute;

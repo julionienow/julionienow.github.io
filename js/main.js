@@ -6,6 +6,36 @@ $(function() {
 	//change text if is mobile
 	if ($(window).width() < 768) {
 	   $(".body_profile-settings > h2").html("SETTINGS");
+
+
+
+	//add swipe left and right function
+	$(".body_profile-info").on("swipeleft",function(){
+		$(".body_profile-info").hide(500);
+		$(".body_profile-settings").show();
+
+		$(".header_bottom_nav a.about").removeClass("selected");
+		$(".header_bottom_nav a.settings").addClass("selected");
+	});
+
+	$(".body_profile-settings").on("swiperight",function(){
+		$(".body_profile-info").show(500);
+		$(".body_profile-settings").hide();
+
+
+		$(".header_bottom_nav a.about").addClass("selected");
+		$(".header_bottom_nav a.settings").removeClass("selected");
+	});
+
+	$(".body_profile-info_edit").on("swipeleft",function(){
+		$(".body_profile-info_edit").hide(500);
+		$(".body_profile-settings").show();
+
+		$(".header_bottom_nav a.about").removeClass("selected");
+		$(".header_bottom_nav a.settings").addClass("selected");
+	});
+
+
 	}
 
 
@@ -222,14 +252,25 @@ $(function() {
 
 	$(".login_box form #loginemail").click(function() {
 		var currentinput = $(this).attr('placeholder');
-		$(".login_box-email_input_text").text(currentinput);
-		$(this).attr('placeholder', '');
+
+		if (currentinput.length > 0  ) {
+
+			$(".login_box-email_input_text").text(currentinput);
+			$(this).attr('placeholder', '');
+
+		}
 	})
 
 	$(".login_box form #loginpass").click(function() {
 		var currentinput = $(this).attr('placeholder');
-		$(".login_box-password_input_text").text(currentinput);
-		$(this).attr('placeholder', '');
+
+		if (currentinput.length > 0  ) {
+
+			$(".login_box-password_input_text").text(currentinput);
+			$(this).attr('placeholder', '');
+
+		}
+
 	})
 
 	
@@ -237,20 +278,35 @@ $(function() {
 
 	$(".body_profile-settings form #settingscurrent").click(function() {
 		var currentinput = $(this).attr('placeholder');
-		$(".body_profile-settings-settingscurrent").text(currentinput);
-		$(this).attr('placeholder', '');
+
+		if (currentinput.length > 0  ) {
+
+			$(".body_profile-settings-settingscurrent").text(currentinput);
+			$(this).attr('placeholder', '');
+
+		}
 	})
 
 	$(".body_profile-settings form #settingsnew").click(function() {
 		var currentinput = $(this).attr('placeholder');
-		$(".body_profile-settings-settingsnew").text(currentinput);
-		$(this).attr('placeholder', '');
+
+		if (currentinput.length > 0  ) {
+
+			$(".body_profile-settings-settingsnew").text(currentinput);
+			$(this).attr('placeholder', '');
+
+		}
 	})
 
 	$(".body_profile-settings form #settingsrepeat").click(function() {
 		var currentinput = $(this).attr('placeholder');
-		$(".body_profile-settings-settingsrepeat").text(currentinput);
-		$(this).attr('placeholder', '');
+
+		if (currentinput.length > 0  ) {
+
+			$(".body_profile-settings-settingsrepeat").text(currentinput);
+			$(this).attr('placeholder', '');
+
+		}
 	})
 
 
@@ -259,62 +315,60 @@ $(function() {
 
 	$(".body_profile-info_edit #formfirst").click(function() {
 		var currentinput = $(this).attr('placeholder');
-		$(".body_profile-info_edit-_firstmobile").text(currentinput);
-		$(this).attr('placeholder', '');
+
+		if (currentinput.length > 0  ) {
+
+			$(".body_profile-info_edit-_firstmobile").text(currentinput);
+			$(this).attr('placeholder', '');
+
+		}
 	})
 
 	$(".body_profile-info_edit #formlast").click(function() {
 		var currentinput = $(this).attr('placeholder');
-		$(".body_profile-info_edit-_lastmobile").text(currentinput);
-		$(this).attr('placeholder', '');
+
+		if (currentinput.length > 0  ) {
+
+			$(".body_profile-info_edit-_lastmobile").text(currentinput);
+			$(this).attr('placeholder', '');
+
+		}
 	})
 
 	$(".body_profile-info_edit #formsite").click(function() {
 		var currentinput = $(this).attr('placeholder');
-		$(".body_profile-info_edit-_websitemobile").text(currentinput);
-		$(this).attr('placeholder', '');
+
+		if (currentinput.length > 0  ) {
+
+			$(".body_profile-info_edit-_websitemobile").text(currentinput);
+			$(this).attr('placeholder', '');
+			
+		}
 	})
 
 	$(".body_profile-info_edit #formphone").click(function() {
 		var currentinput = $(this).attr('placeholder');
-		$(".body_profile-info_edit-_phonemobile").text(currentinput);
-		$(this).attr('placeholder', '');
+
+		if (currentinput.length > 0  ) {
+
+			$(".body_profile-info_edit-_phonemobile").text(currentinput);
+			$(this).attr('placeholder', '');
+
+		}
 	})
 
 	$(".body_profile-info_edit #formadress").click(function() {
 		var currentinput = $(this).attr('placeholder');
-		$(".body_profile-info_edit-_adressmobile").text(currentinput);
-		$(this).attr('placeholder', '');
+
+		if (currentinput.length > 0  ) {
+		
+			$(".body_profile-info_edit-_adressmobile").text(currentinput);
+			$(this).attr('placeholder', '');
+
+		}
+
 	})
 
-
-	//add swipe left and right function
-	$(".body_profile-info").on("swipeleft",function(){
-		$(".body_profile-info").hide(500);
-		$(".body_profile-settings").show();
-
-		$(".header_bottom_nav a.about").removeClass("selected");
-		$(".header_bottom_nav a.settings").addClass("selected");
-	});
-
-	$(".body_profile-settings").on("swiperight",function(){
-		$(".body_profile-info").show(500);
-		$(".body_profile-settings").hide();
-
-
-		$(".header_bottom_nav a.about").addClass("selected");
-		$(".header_bottom_nav a.settings").removeClass("selected");
-	});
-
-	$(".body_profile-info_edit").on("swipeleft",function(){
-		$(".body_profile-info_edit").hide(500);
-		$(".body_profile-settings").show();
-
-		$(".header_bottom_nav a.about").removeClass("selected");
-		$(".header_bottom_nav a.settings").addClass("selected");
-	});
-
-	
 
 
 })

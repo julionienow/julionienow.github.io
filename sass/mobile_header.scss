@@ -21,9 +21,9 @@
 
 		.header_logout button {
 			background-color: transparent;
-		    width: initial;
-		    height: initial;
-		    border: initial;
+		    width: inherit;
+		    height: inherit;
+		    border: inherit;
 		    font-weight: bold;
 		    font-size: 12px;
 		}
@@ -41,7 +41,7 @@
 		}
 
 		.header_bottom {
-			float: initial;
+			float: inherit;
 			text-align: center;
 			padding-top: 37px;
 
@@ -52,12 +52,12 @@
 		}
 		
 		.header_bottom_rate {
-		    float: initial;
+		    float: inherit;
 		    margin-top: 36px;
 		}
 
 		.header_bottom_profile-info {
-		    display: initial;
+		    display: inherit;
 		    width: 100%;
 		    margin: 0 auto;
 		    text-align: center;
@@ -74,9 +74,9 @@
 		}
 
 		.header_bottom_followers {
-		    float: initial;
+		    float: inherit;
 		    display: block;
-    		margin-top: 21px;
+    		margin-top: 14px;
 
     		span:before {
     			vertical-align: sub;
@@ -127,7 +127,7 @@
 			}
 
 			a:first-child {
-				margin-left: initial;
+				margin-left: inherit;
 			}
 		}
 

@@ -54,6 +54,7 @@
     			@extend %input_pattern;
     			width: 100%;
     			margin-top: 58px;
+    			min-height: 33px;
     		}
 
     		button {
@@ -61,7 +62,7 @@
 			    width: 100%;
 			    line-height: 45px;
 			    box-sizing: border-box;
-			    height: initial;
+			    height: inherit;
 			    font-size: 14px;
 			    font-weight: bold;
     		}
