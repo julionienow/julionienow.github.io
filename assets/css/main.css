@@ -499,7 +499,8 @@ input:focus:-ms-input-placeholder {
     .container > * {
       padding-right: 30px; }
   .container.website {
-    padding-bottom: 0px; }
+    padding-bottom: 0px;
+    padding-top: 23px; }
   header {
     background-color: transparent;
     padding-top: 0px; }
@@ -580,6 +581,8 @@ input:focus:-ms-input-placeholder {
       display: none; } }
 
 @media screen and (max-width: 767px) {
+  .body_profile-info span.editabsolutedesktop {
+    display: none; }
   .container.website {
     height: 100%; }
   .container.website section {

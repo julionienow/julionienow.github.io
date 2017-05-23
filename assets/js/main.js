@@ -68,12 +68,58 @@ $(function () {
 		$(".body_profile-info").show(500);
 	});
 
+	//MOBILE saves the profile edit changes on edit
+	$(".body_profile-info_edit .save").click(function () {
+
+		var firstnamemobile = document.getElementById("formfirst").value;
+		var lastnamemobile = document.getElementById("formlast").value;
+		var urlsitemobile = document.getElementById("formsite").value;
+		var phonenumbermobile = document.getElementById("formphone").value;
+		var adressmobile = document.getElementById("formadress").value;
+
+		if (firstnamemobile.length > 0) {
+			$(".body_profile-info_loaded-name .first").text(firstnamemobile);
+			$(this).attr('placeholder', '');
+			$(".body_profile-info_edit").hide();
+			$(".body_profile-info").show(500);
+		}
+		if (lastnamemobile.length > 0) {
+			$(".body_profile-info_loaded-name .second").text(lastnamemobile);
+			$(this).attr('placeholder', '');
+			$(".body_profile-info_edit").hide();
+			$(".body_profile-info").show(500);
+		}
+		if (urlsitemobile.length > 0) {
+			$(".body_profile-info_loaded-website h4 a").text(urlsitemobile);
+			$(".body_profile-info_loaded-website h4 a").attr("href", "http://" + urlsitemobile);
+			$(this).attr('placeholder', '');
+			$(".body_profile-info_edit").hide();
+			$(".body_profile-info").show(500);
+		}
+		if (phonenumbermobile.length > 0) {
+			$(".body_profile-info_loaded-phone h4").text(phonenumbermobile);
+			$(this).attr('placeholder', '');
+			$(".body_profile-info_edit").hide();
+			$(".body_profile-info").show(500);
+		}
+		if (adressmobile.length > 0) {
+			$(".body_profile-info_loaded-adress h4").text(adressmobile);
+			$(this).attr('placeholder', '');
+			$(".body_profile-info_edit").hide();
+			$(".body_profile-info").show(500);
+		}
+
+		$(".body_profile-info_edit").hide();
+		$(".body_profile-info").show(500);
+	});
+
 	//Changes the selected tab
 	$(".header_bottom_nav a.settings").click(function () {
 
 		$(".body_profile-info").hide(500);
 		$(".body_profile-settings").show(500);
 		$(".body_profile-info_edit").hide();
+		$(".body_profile-settings form button").hide();
 
 		$(".header_bottom_nav a.about").removeClass("selected");
 		$(".header_bottom_nav a.settings").addClass("selected");
@@ -142,7 +188,7 @@ $(function () {
 
 				var newwebsite = document.getElementById("websiteinfoedit").value;
 				$(".body_profile-info_loaded-website h4 a").text(newwebsite);
-				$(".body_profile-info_loaded-website h4 a").attr("href", newwebsite);
+				$(".body_profile-info_loaded-website h4 a").attr("href", "http://" + newwebsite);
 			} else {
 
 				alert("Please fill this input");
