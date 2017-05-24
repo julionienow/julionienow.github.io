@@ -119,7 +119,6 @@ $(function () {
 		$(".body_profile-info").hide(500);
 		$(".body_profile-settings").show(500);
 		$(".body_profile-info_edit").hide();
-		$(".body_profile-settings form button").hide();
 
 		$(".header_bottom_nav a.about").removeClass("selected");
 		$(".header_bottom_nav a.settings").addClass("selected");
